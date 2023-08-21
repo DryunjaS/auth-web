@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&family=Poppins:wght@400;700&display=swap');
+
+body{
+    width: 1920px;
+    height: 1080px;
+    border-radius: 34px;
+    border: 10px solid #FFF;
+    background: #FFF;
+    box-shadow: 0px 0px 45px 0px #E1C2A8;
+}
+.wrapper{
+    width: 1920px;
+    height: 1080px;
+    display: flex;
+}
+
+/* ------------Скилет лого */
+img.logo{
+    width: 1109px;
+    height: 1080px;
+    border-radius: 34px 0 0 34px;
+}
+/* ---------Окно авторизации */
+.auth__wrap{
+    width: 811px;
+    height: 1080px;
+}
+.krest{
+    margin-top: 80px;
+    margin-left: 120px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 36px;
+}
+.heder__title{
+    color: #525252;
+    font-family: Nunito Sans;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 120px;
+}
+.subtitle{
+    color: #525252;
+    font-family: Nunito Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 120px;
+    margin-bottom: 32px;
+}
+.google__button{
+    display: flex;
+    width: 520px;
+    height: 45px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #E8E8E8;
+    margin-left: 120px;
+    margin-bottom: 46px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.google__button:hover,.google__button:active,.google__button:focus{
+    scale: 1.05;
+}
+.google__img{
+    width: 40px;
+    height: 40px;
+    margin-right: 13px;
+}
+.google__button__text{
+    color: var(--gray-3, #828282);
+    font-family: Nunito Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.or__auth__text i{
+    color: #A1A1A1;
+    font-family: Nunito Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.or__auth__text{
+    color: #DDD;
+    font-family: Nunito Sans;
+    font-size:20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 184px;
+    margin-bottom: 36px;
+}
+/* Основка в поле ввода */
+.main{
+    margin-left: 120px;
+}
+
+.login__write__text,.password__write__text{
+    color: var(--gray-3, #828282);
+    font-family: Nunito Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 4px;
+}
+.inputLogin{
+    margin-bottom: 24px;
+}
+.inputPassword{
+    margin-bottom: 8px;
+}
+.inputLogin,.inputPassword{
+    display: flex;
+    width: 520px;
+    height: 40px;
+    font-size: 22px;
+    padding: 13px 10px;
+    align-items: center;
+    gap: 13px;
+    border-radius: 5px;
+    border: 1px solid #DED2D9;
+}
+.other__write{
+    display: flex;
+    width: 520px;
+    justify-content: space-between;
+    margin-bottom: 32px;
+
+}
+/* Checkbox */
+.input__chek{
+    display: flex;
+    width: 200px;
+}
+#input__chekbox{
+    margin: 0;
+    margin-right: 8px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.input__chek__text{
+    color: #A1A1A1;
+    font-family: Nunito Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.forgotPass{
+    color: #7F265B;
+    font-family: Nunito Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+}
+/* Кнопка авторизации */
+.submit__btn{
+    display: flex;
+    width: 550px;
+    height: 70px;
+    padding: 13px 10px 12px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    border-radius: 6px;
+    background: #7F265B;
+    color: #FFF;
+    font-family: Nunito Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-bottom: 80px;
+}
+.submit__btn:hover,.submit__btn:focus.submit__btn:active{
+    scale: 1.05;
+}
+/* Подвал */
+.footer__title{
+    display: flex;
+    margin-left: 190px;
+}
+.footer__onetitle{
+    color: var(--gray-3, #828282);
+    font-family: Nunito Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 10px;
+}
+.footer__twotitle{
+    color: #7F265B;
+    font-family: Nunito Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
