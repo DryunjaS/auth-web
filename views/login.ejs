@@ -44,7 +44,7 @@
                             <input type="checkbox" name="" id="input__chekbox">
                             <div class="input__chek__text">Remember Me</div>
                         </div>
-                        <div class="forgotPass">Forgot Password?</div>
+                        <!-- <div class="forgotPass">Forgot Password?</div> -->
                     </div>
                     <button type="submit" class="submit__btn">Login</button>
                 </form>
@@ -52,10 +52,15 @@
             <footer>
                 <div class="footer__title">
                     <div class="footer__onetitle">Not Registered Yet?</div>
-                    <div class="footer__twotitle">Create an account</div>
+                    <div class="footer__twotitle" onclick="redirectToOtherPage()">Create an account</div>
                 </div>
             </footer>
         </div>
     </div>
+    <script>
+        function redirectToOtherPage() {
+            window.location.href = '/auth/reg';
+        }
+    </script>
 </body>
 </html>

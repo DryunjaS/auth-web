@@ -7,10 +7,8 @@ class controller{
             const username = req.body.username
             const userpassword = req.body.password
             const candidate = await People.findOne({name:username})
-            console.log(candidate)
             if(candidate){
-                // return res.redirect('/auth/reg');
-                res.render('reg',{
+                return res.render('reg',{
                     message:"Пользователь с таким именем уже существует!"
                 })
             }
@@ -29,14 +27,12 @@ class controller{
             const userpassword = req.body.password
             const candidate = await People.findOne({name:username})
             if(!candidate){
-                // return res.redirect('/auth/login');
                 res.render('login',{
                     message:"Пользователя с таким именем не существует!"
                 })
             }
             const validpass = bcrypt.compareSync(userpassword, candidate.password);
             if(!validpass){
-                // return res.redirect('/auth/login');
                 res.render('login',{
                     message:"Неверный пароль!"
                 })
