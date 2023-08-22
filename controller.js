@@ -9,7 +9,10 @@ class controller{
             const candidate = await People.findOne({name:username})
             console.log(candidate)
             if(candidate){
-                return res.redirect('/auth/reg');
+                // return res.redirect('/auth/reg');
+                res.render('reg',{
+                    message:"Пользователь с таким именем уже существует!"
+                })
             }
             const passwordHash = bcrypt.hashSync(userpassword, 7)
             const people = new People({name:username,password:passwordHash})
@@ -22,7 +25,23 @@ class controller{
     }
     async login(req,res){
         try{
-            
+            const username = req.body.username
+            const userpassword = req.body.password
+            const candidate = await People.findOne({name:username})
+            if(!candidate){
+                // return res.redirect('/auth/login');
+                res.render('login',{
+                    message:"Пользователя с таким именем не существует!"
+                })
+            }
+            const validpass = bcrypt.compareSync(userpassword, candidate.password);
+            if(!validpass){
+                // return res.redirect('/auth/login');
+                res.render('login',{
+                    message:"Неверный пароль!"
+                })
+            }
+            res.redirect('/auth/users');
         }
         catch(err){
             console.log(err) 
@@ -30,9 +49,9 @@ class controller{
     }
     async users(req,res,next){
         try{
-            const listUsers = await People.find()
-            console.log(listUsers)
-            next()
+            const listUsers = await People.find();
+            req.listUsers = listUsers; 
+            next();
         }
         catch(err){
             console.log(err)

@@ -27,7 +27,7 @@ img.logo{
     height: 1080px;
 }
 .krest{
-    margin-top: 80px;
+    margin-top: 60px;
     margin-left: 120px;
     width: 100px;
     height: 100px;
@@ -186,7 +186,7 @@ img.logo{
     line-height: normal;
     cursor: pointer;
     transition: all 0.2s;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
 }
 .submit__btn:hover,.submit__btn:focus.submit__btn:active{
     scale: 1.05;
@@ -213,3 +213,23 @@ img.logo{
     font-weight: 600;
     line-height: normal;
 }
+
+/* Для Списка пользователей */
+.zebra {
+    font-family: Nunito Sans;
+    list-style: none;
+    border-left: 10px solid #FC7574;
+    padding: 0;
+    font-size: 24px;
+  }
+  .zebra li {padding: 10px;}
+  .zebra li:nth-child(odd) {background: #E1F1FF;}
+  .zebra li:nth-child(even) {background: white;}
+
+  /* Предупреждения */
+  .message__err{
+    color: red;
+    font-size: 20px;
+    /* text-align: center; */
+    margin: 5px;
+  }

@@ -5,6 +5,7 @@ const PORT = process.env.PORT || 5000
 const app = express()
 
 app.use('/auth',authRouter)
+app.set('view engine', 'ejs');
 
 const start = async()=>{
      try{

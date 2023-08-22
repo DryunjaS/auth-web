@@ -13,7 +13,7 @@
         <div class="auth__wrap">
             <header>
                 <img src="./img/elem_krest.png" alt="elem_krest" class="krest">
-                <h1 class="heder__title">Login to your Account</h1>
+                <h1 class="heder__title">Registered</h1>
                 <div class="subtitle">See what is going on with your business</div>
                 <div class="google__button">
                     <img src="./img/google__img.png" alt="google__img" class="google__img">
@@ -24,7 +24,7 @@
                 </div>
             </header>
             <main class="main">
-                <form action="/auth/login" method="POST">
+                <form action="/auth/reg" method="POST">
                     <div class="login__write">
                         <div class="login__write__text">Login</div>
                         <input type="text" class="inputLogin" name="username">
@@ -33,14 +33,19 @@
                         <div class="password__write__text">Password</div>
                         <input type="password" class="inputPassword" name="password">
                     </div>
+
+<!------------ Прудупреждение  -->
+                    <div class="message__err"><%=message%></div>
+
+
                     <div class="other__write">
                         <div class="input__chek">
                             <input type="checkbox" name="" id="input__chekbox">
                             <div class="input__chek__text">Remember Me</div>
                         </div>
-                        <div class="forgotPass">Forgot Password?</div>
+                        <div class="forgotPass" onclick="redirectToOtherPage()">Using accaunt?</div>
                     </div>
-                    <button type="submit" class="submit__btn">Login</button>
+                    <button type="submit" class="submit__btn">Enter</button>
                 </form>
             </main>
             <footer>
@@ -51,5 +56,10 @@
             </footer>
         </div>
     </div>
+    <script>
+        function redirectToOtherPage() {
+            window.location.href = '/auth/login';
+        }
+    </script>
 </body>
 </html>

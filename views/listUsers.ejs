@@ -12,9 +12,9 @@
         <img src="./img/logo.png" alt="logo" class="logo">
         <div class="auth__wrap">
             <h1 class="heder__title">Список участников</h1>
-            <ul class="userList">
-                <% for(var i=0; i<user.length;i++) {%>
-                    <li><%=user[i] %></li>
+            <ul class="zebra">
+                <% for(var i=0; i<users.length;i++) {%>
+                    <li><%=users[i].name %></li>
                 <%} %>
             </ul>
         </div>
