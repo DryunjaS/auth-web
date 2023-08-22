@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./node_modules/reset-css/reset.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <img src="./img/logo.png" alt="logo" class="logo">
+        <div class="auth__wrap">
+            <header>
+                <img src="./img/elem_krest.png" alt="elem_krest" class="krest">
+                <h1 class="heder__title">Registered</h1>
+                <div class="subtitle">See what is going on with your business</div>
+                <div class="google__button">
+                    <img src="./img/google__img.png" alt="google__img" class="google__img">
+                    <div class="google__button__text">Continue with Google</div>
+                </div>
+                <div class="or__auth__text">
+                    ------------- <i>or Sign in with Email</i> ------------- 
+                </div>
+            </header>
+            <main class="main">
+                <form action="/auth/reg" method="POST">
+                    <div class="login__write">
+                        <div class="login__write__text">Login</div>
+                        <input type="text" class="inputLogin" name="username">
+                    </div>
+                    <div class="password__write">
+                        <div class="password__write__text">Password</div>
+                        <input type="password" class="inputPassword" name="password">
+                    </div>
+                    <div class="other__write">
+                        <div class="input__chek">
+                            <input type="checkbox" name="" id="input__chekbox">
+                            <div class="input__chek__text">Remember Me</div>
+                        </div>
+                        <div class="forgotPass">Using accaunt?</div>
+                    </div>
+                    <button type="submit" class="submit__btn">Enter</button>
+                </form>
+            </main>
+            <footer>
+                <div class="footer__title">
+                    <div class="footer__onetitle">Not Registered Yet?</div>
+                    <div class="footer__twotitle">Create an account</div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
